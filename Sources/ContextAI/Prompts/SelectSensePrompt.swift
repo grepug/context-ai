@@ -13,7 +13,7 @@ public struct SelectSensePrompt: LLMPrompt {
         public let adja: String
         public let sense: String
 
-        init(text: String, word: String, langs: [CTLocale] = [.en, .zh_Hans], adja: String, sense: String) {
+        public init(text: String, word: String, langs: [CTLocale] = [.en, .zh_Hans], adja: String, sense: String) {
             self.text = text
             self.word = word
             self.langs = langs.map { $0.rawValue }.joined(separator: ",")

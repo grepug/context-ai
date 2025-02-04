@@ -21,7 +21,7 @@ extension TextPromptKey {
         }
     }
 
-    func prompt(input: LLMPromptNormalizedInput) -> LLMStaticTextPrompt<String, LLMPromptNormalizedInput> {
+    func prompt(input: LLMPromptNormalizedInput) -> LLMStaticTextPrompt<LLMPromptNormalizedInput> {
         .init(
             key: rawValue,
             input: input,

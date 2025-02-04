@@ -1,5 +1,5 @@
 {
-  "originHash" : "9377c7f2bbe0f0db291b23b5e50f4201622287f4b8062b874d5f06f218844d22",
+  "originHash" : "177f731eb1799fac0826b377cc3bb24260c77b85207c5f331e5b87ec89dcd86b",
   "pins" : [
     {
       "identity" : "context-shared-models",
@@ -8,6 +8,15 @@
       "state" : {
         "branch" : "main",
         "revision" : "07b2ed624310d8490b0b6b44d0e725985a892908"
+      }
+    },
+    {
+      "identity" : "event-source",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grepug/event-source.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "9573201033c457f0786e4419fea8752bde0a52c1"
       }
     }
   ],
