@@ -1,0 +1,15 @@
+{
+  "originHash" : "9377c7f2bbe0f0db291b23b5e50f4201622287f4b8062b874d5f06f218844d22",
+  "pins" : [
+    {
+      "identity" : "context-shared-models",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grepug/context-shared-models.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "07b2ed624310d8490b0b6b44d0e725985a892908"
+      }
+    }
+  ],
+  "version" : 3
+}

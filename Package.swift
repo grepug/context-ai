@@ -5,20 +5,32 @@ import PackageDescription
 
 let package = Package(
     name: "context-ai",
+    platforms: [
+        .macOS(.v13)
+    ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "context-ai",
-            targets: ["context-ai"]),
+            name: "ContextAI",
+            targets: ["ContextAI"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/grepug/swift-ai.git", branch: "main"),
+        .package(url: "https://github.com/grepug/context-shared-models.git", branch: "main"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "context-ai"),
+            name: "ContextAI",
+            dependencies: [
+                .product(name: "SwiftAI", package: "swift-ai"),
+                .product(name: "ContextSharedModels", package: "context-shared-models"),
+            ]
+        ),
         .testTarget(
             name: "context-aiTests",
-            dependencies: ["context-ai"]
+            dependencies: ["ContextAI"]
         ),
     ]
 )
