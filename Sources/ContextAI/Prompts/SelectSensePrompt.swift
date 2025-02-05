@@ -1,12 +1,12 @@
 import ContextSharedModels
 import SwiftAI
 
-public struct SelectSensePrompt: LLMPrompt {
+public struct SelectSensePrompt: AITask {
     public var key: String {
         "selectSense"
     }
 
-    public struct Input: LLMPromptInput {
+    public struct Input: AITaskInput {
         public let text: String
         public let word: String
         public let langs: String
@@ -22,7 +22,7 @@ public struct SelectSensePrompt: LLMPrompt {
         }
     }
 
-    public enum Output: LLMPromptOutput {
+    public enum Output: AITaskOutput {
         case aiSense(LocaledStringDict)
         case index(Int)
     }

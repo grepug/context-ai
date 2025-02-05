@@ -21,7 +21,7 @@ extension TextPromptKey {
         }
     }
 
-    func prompt(input: LLMPromptNormalizedInput) -> LLMStaticTextPrompt<LLMPromptNormalizedInput> {
+    func prompt(input: AICompletionNormalizedInput) -> AIStaticTextCompletion<AICompletionNormalizedInput> {
         .init(
             key: rawValue,
             input: input,

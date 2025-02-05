@@ -1,12 +1,12 @@
 import ContextSharedModels
 import SwiftAI
 
-public struct WordInfoPrompt: LLMPrompt {
+public struct WordInfoPrompt: AITask {
     public var key: String {
         "wordInfo"
     }
 
-    public struct Input: LLMPromptInput {
+    public struct Input: AITaskInput {
         public let text: String
         public let word: String
         public let langs: String
@@ -20,7 +20,7 @@ public struct WordInfoPrompt: LLMPrompt {
         }
     }
 
-    public struct Output: LLMPromptOutput {
+    public struct Output: AITaskOutput {
         public let synonym: String
         public let desc: LocaledStringDict
     }
