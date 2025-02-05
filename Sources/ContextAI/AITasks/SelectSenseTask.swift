@@ -29,6 +29,10 @@ public struct SelectSenseTask: AITask {
 
     public let input: Input
 
+    public init(input: Input) {
+        self.input = input
+    }
+
     public func template() async throws -> String {
         PromptTemplates.selectSense
     }
