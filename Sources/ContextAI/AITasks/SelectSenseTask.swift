@@ -1,7 +1,7 @@
 import ContextSharedModels
 import SwiftAI
 
-public struct SelectSensePrompt: AITask {
+public struct SelectSenseTask: AITask {
     public var key: String {
         "selectSense"
     }

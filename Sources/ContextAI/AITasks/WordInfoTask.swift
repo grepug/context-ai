@@ -1,7 +1,7 @@
 import ContextSharedModels
 import SwiftAI
 
-public struct WordInfoPrompt: AITask {
+public struct WordInfoTask: AITask {
     public var key: String {
         "wordInfo"
     }
