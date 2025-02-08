@@ -2,7 +2,7 @@ import ContextSharedModels
 import SwiftAI
 
 public struct SelectSenseCompletion: AITask {
-    public var key: String {
+    public static var kind: String {
         "selectSense"
     }
 

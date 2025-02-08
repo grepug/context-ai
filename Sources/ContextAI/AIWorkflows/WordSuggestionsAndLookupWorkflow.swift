@@ -3,7 +3,7 @@ import Foundation
 import SwiftAI
 
 public struct WordSuggestionsAndLookupWorkflow: AITask {
-    public var key: String {
+    public static var kind: String {
         "wordSuggestionAndLookup"
     }
 

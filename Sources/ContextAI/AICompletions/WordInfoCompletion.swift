@@ -2,7 +2,7 @@ import ContextSharedModels
 import SwiftAI
 
 public struct WordInfoCompletion: AITask {
-    public var key: String {
+    public static var kind: String {
         "wordInfo"
     }
 
