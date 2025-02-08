@@ -18,6 +18,15 @@
         "branch" : "master",
         "revision" : "9573201033c457f0786e4419fea8752bde0a52c1"
       }
+    },
+    {
+      "identity" : "swift-ai",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/grepug/swift-ai.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c53f882bfeb48cee93dd3de283a2e29fd3588173"
+      }
     }
   ],
   "version" : 3
