@@ -1,5 +1,5 @@
 {
-  "originHash" : "177f731eb1799fac0826b377cc3bb24260c77b85207c5f331e5b87ec89dcd86b",
+  "originHash" : "e24beff39a8329c8680391eb853e0f287a555ef0c11d6aaecd4259ffc9d502bb",
   "pins" : [
     {
       "identity" : "context-shared-models",
@@ -25,7 +25,7 @@
       "location" : "https://github.com/grepug/swift-ai.git",
       "state" : {
         "branch" : "main",
-        "revision" : "d839598e9cf6060068f2488db09e7a0c4201915d"
+        "revision" : "8d00a83d53e9cca4e8ce8498107c3d22ff64450c"
       }
     }
   ],
