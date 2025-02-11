@@ -22,12 +22,14 @@ public struct FindPhrasesCompletion: AITask {
             public let lemma: String
             public let adja: String
             public let sense: LocaledStringDict
+            public let desc: String
 
-            public init(phrase: String, lemma: String, adja: String, sense: LocaledStringDict) {
+            public init(phrase: String, lemma: String, adja: String, sense: LocaledStringDict, desc: String) {
                 self.phrase = phrase
                 self.lemma = lemma
                 self.adja = adja
                 self.sense = sense
+                self.desc = desc
             }
         }
 
