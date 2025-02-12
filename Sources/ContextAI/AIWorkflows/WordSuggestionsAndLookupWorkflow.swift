@@ -2,7 +2,7 @@ import ContextSharedModels
 import Foundation
 import SwiftAI
 
-public struct WordSuggestionsAndLookupWorkflow: AITask {
+public struct WordSuggestionsAndLookupWorkflow: AIStreamTask {
     public static var kind: String {
         "wordSuggestionAndLookup"
     }
