@@ -31,11 +31,13 @@ public struct WordSuggestionsAndLookupWorkflow: AIStreamTask {
 
     public var input: Input
 
-    public func assembleOutput(chunks: [StreamChunk]) -> Output {
-        chunks.reduce(into: .init()) { result, chunk in
-            result.suggestedItems.merge(chunk.suggestedItems) { $1 }
-            result.recurringItems.merge(chunk.recurringItems) { $1 }
-        }
+    public func initialOutput() -> Output {
+        .init()
+    }
+
+    public func reduce(partialOutput: inout Output, chunk: Output) {
+        partialOutput.suggestedItems.merge(chunk.suggestedItems) { $1 }
+        partialOutput.recurringItems.merge(chunk.recurringItems) { $1 }
     }
 
     public init(input: Input) {
