@@ -3,6 +3,7 @@ import SwiftAI
 
 public struct ExtraInfoTextCompletion: AITextStreamCompletion {
     public typealias Output = AITextStreamCompletionOutput
+    public typealias StreamChunk = AITextStreamCompletionOutput
 
     public struct Input: AITaskInput {
         public let text: String
