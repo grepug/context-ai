@@ -1,23 +1,13 @@
 import SwiftAI
 
 public struct TranslatorTextCompletion: AITextStreamCompletion {
-    public func promptTemplate() async throws -> String {
-        promptTemplate
-    }
-
     public typealias Output = AITextStreamCompletionOutput
     public typealias StreamChunk = AITextStreamCompletionOutput
 
     public var input: Input
-    public var promptTemplate: String
 
     public init(input: Input) {
-        fatalError()
-    }
-
-    public init(input: Input, promptTemplate: String) {
         self.input = input
-        self.promptTemplate = promptTemplate
     }
 
     public static var kind: String {

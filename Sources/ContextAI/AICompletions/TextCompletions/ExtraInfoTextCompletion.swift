@@ -23,7 +23,6 @@ public struct ExtraInfoTextCompletion: AITextStreamCompletion {
     }
 
     public enum Key: String {
-        case extraInfo
         case studyNotes
         case thesaurus
         case memorizingHelper
@@ -33,22 +32,19 @@ public struct ExtraInfoTextCompletion: AITextStreamCompletion {
 
     public var input: Input
     public var key: String
-    public var promptTemplate: String
 
-    public init(key: Key, input: Input, promptTemplate: String) {
+    public init(key: Key, input: Input) {
         self.key = key.rawValue
         self.input = input
-        self.promptTemplate = promptTemplate
     }
 
-    public init?(key: String, input: Input, promptTemplate: String) {
+    public init?(key: String, input: Input) {
         guard let key = Key(rawValue: key) else {
             return nil
         }
 
         self.key = key.rawValue
         self.input = input
-        self.promptTemplate = promptTemplate
     }
 
     public static var kind: String {
@@ -70,9 +66,5 @@ public struct ExtraInfoTextCompletion: AITextStreamCompletion {
 
     public var endSymbol: String? {
         "$$"
-    }
-
-    public func promptTemplate() async throws -> String {
-        promptTemplate
     }
 }
