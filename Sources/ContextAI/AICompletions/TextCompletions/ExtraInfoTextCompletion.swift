@@ -24,7 +24,6 @@ public struct ExtraInfoTextCompletion: AITextStreamCompletion {
     }
 
     public enum Key: String {
-        case studyNotes
         case thesaurus
         case memorizingHelper
         case collocations
