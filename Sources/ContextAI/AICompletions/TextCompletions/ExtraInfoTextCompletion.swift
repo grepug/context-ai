@@ -39,15 +39,6 @@ public struct ExtraInfoTextCompletion: AITextStreamCompletion {
         self.input = input
     }
 
-    public init?(key: String, input: Input) {
-        guard let key = Key(rawValue: key) else {
-            return nil
-        }
-
-        self.key = key.rawValue
-        self.input = input
-    }
-
     public static var kind: String {
         "extraInfo"
     }
