@@ -54,7 +54,7 @@ public struct ExtraInfoTextCompletion: AITextStreamCompletion {
 
     public func makeOutput(chunk: String, accumulatedString: inout String) -> (output: Output?, shouldStop: Bool) {
         accumulatedString += chunk
-        return (Output(text: accumulatedString), false)
+        return (Output(text: chunk), false)
     }
 
     public func makeOutput(string: String) -> Output {
