@@ -18,7 +18,6 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/grepug/swift-ai.git", branch: "main"),
         .package(url: "https://github.com/grepug/context-shared-models.git", branch: "main"),
-        .package(url: "https://github.com/grepug/event-source.git", branch: "master"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -28,7 +27,6 @@ let package = Package(
             dependencies: [
                 .product(name: "SwiftAI", package: "swift-ai"),
                 .product(name: "ContextSharedModels", package: "context-shared-models"),
-                .product(name: "EventSource", package: "event-source"),
             ]
         ),
         .testTarget(

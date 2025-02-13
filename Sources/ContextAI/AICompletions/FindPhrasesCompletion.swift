@@ -17,7 +17,7 @@ public struct FindPhrasesCompletion: AITask {
     }
 
     public struct Output: AITaskOutput {
-        public struct Phrase: CoSendable {
+        public struct Phrase: CoSendable, Hashable {
             public let phrase: String
             public let lemma: String
             public let adja: String
