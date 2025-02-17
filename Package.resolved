@@ -1,5 +1,5 @@
 {
-  "originHash" : "e24beff39a8329c8680391eb853e0f287a555ef0c11d6aaecd4259ffc9d502bb",
+  "originHash" : "9c03cd25add318db9544652df4f6ea05a04de0acab524371844b0c565f87fbaf",
   "pins" : [
     {
       "identity" : "context-shared-models",
@@ -25,7 +25,16 @@
       "location" : "https://github.com/grepug/swift-ai.git",
       "state" : {
         "branch" : "main",
-        "revision" : "e9d509c26bc9c3213a18d8ce2b55fc98c6ad1424"
+        "revision" : "522b84f95b22293aad14f4d715a95022a4368f9c"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "96a2f8a0fa41e9e09af4585e2724c4e825410b91",
+        "version" : "1.6.2"
       }
     }
   ],
