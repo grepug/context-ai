@@ -1,7 +1,7 @@
 import ContextSharedModels
 import SwiftAI
 
-public struct FindPhrasesCompletion: AITask {
+public struct FindPhrasesCompletion: AIStreamTask {
     public static var kind: String {
         "findPhrases"
     }
@@ -46,5 +46,13 @@ public struct FindPhrasesCompletion: AITask {
 
     public init(input: Input) {
         self.input = input
+    }
+
+    public func reduce(partialOutput: inout Output, chunk: Output) {
+        partialOutput = .init(phrases: partialOutput.phrases + chunk.phrases)
+    }
+
+    public func initialOutput() -> Output {
+        .init(phrases: [])
     }
 }
