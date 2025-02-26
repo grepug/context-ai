@@ -49,7 +49,7 @@ public struct FindPhrasesCompletion: AIStreamTask {
     }
 
     public func reduce(partialOutput: inout Output, chunk: Output) {
-        partialOutput = .init(phrases: partialOutput.phrases + chunk.phrases)
+        partialOutput = chunk
     }
 
     public func initialOutput() -> Output {
