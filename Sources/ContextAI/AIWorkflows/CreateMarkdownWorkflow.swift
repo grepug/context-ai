@@ -16,10 +16,15 @@ public struct CreateMarkdownWorkflow: AIStreamTask {
     }
 
     public struct Input: AITaskInput {
+        public enum Bool: Int, AITaskInput {
+            case `true`
+            case `false`
+        }
+
         public let text: String
         public let disableAI: Bool
 
-        public init(text: String, disableAI: Bool = false) {
+        public init(text: String, disableAI: Bool = .false) {
             self.text = text
             self.disableAI = disableAI
         }
