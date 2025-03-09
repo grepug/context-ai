@@ -21,12 +21,17 @@ public struct CreateMarkdownWorkflow: AIStreamTask {
             case `false`
         }
 
-        public let text: String
+        public let texts: [String]
         public let disableAI: Bool
 
-        public init(text: String, disableAI: Bool = .false) {
-            self.text = text
-            self.disableAI = disableAI
+        public init(text: String, disableAI: Swift.Bool = false) {
+            self.texts = [text]
+            self.disableAI = disableAI ? .true : .false
+        }
+
+        public init(texts: [String], disableAI: Swift.Bool = false) {
+            self.texts = texts
+            self.disableAI = disableAI ? .true : .false
         }
     }
 
