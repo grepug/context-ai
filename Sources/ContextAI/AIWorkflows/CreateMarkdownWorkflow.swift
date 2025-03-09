@@ -17,9 +17,11 @@ public struct CreateMarkdownWorkflow: AIStreamTask {
 
     public struct Input: AITaskInput {
         public let text: String
+        public let disableAI: Bool
 
-        public init(text: String) {
+        public init(text: String, disableAI: Bool = false) {
             self.text = text
+            self.disableAI = disableAI
         }
     }
 
