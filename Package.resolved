@@ -7,7 +7,7 @@
       "location" : "https://github.com/grepug/context-shared-models.git",
       "state" : {
         "branch" : "main",
-        "revision" : "07b2ed624310d8490b0b6b44d0e725985a892908"
+        "revision" : "6622de4fe16a8513721966df8dca18df00acd78b"
       }
     },
     {
@@ -25,7 +25,7 @@
       "location" : "https://github.com/grepug/swift-ai.git",
       "state" : {
         "branch" : "main",
-        "revision" : "b1b6d656d46558f6444f799a8e57544b0b6ea49f"
+        "revision" : "990bc49d4e055cd2ca7bd28d9c85f1a38c0f8f15"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
-        "revision" : "96a2f8a0fa41e9e09af4585e2724c4e825410b91",
-        "version" : "1.6.2"
+        "revision" : "3d8596ed08bd13520157f0355e35caed215ffbfa",
+        "version" : "1.6.3"
       }
     }
   ],
