@@ -31,10 +31,10 @@ public struct ExtraInfoTextCompletion: AITextStreamCompletion {
     }
 
     public var input: Input
-    public var key: String
+    public var path: String
 
     public init(key: Key, input: Input) {
-        self.key = key.rawValue
+        self.path = key.rawValue
         self.input = input
     }
 
