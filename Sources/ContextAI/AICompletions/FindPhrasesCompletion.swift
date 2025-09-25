@@ -22,10 +22,10 @@ public struct FindPhrasesCompletion: AIStreamTask {
             public let lemma: String
             public let adja: String
             public let sense: LocaledStringDict
-            public let desc: String
+            public let desc: LocaledStringDict
             public let syn: String
 
-            public init(phrase: String, lemma: String, adja: String, sense: LocaledStringDict, desc: String, syn: String) {
+            public init(phrase: String, lemma: String, adja: String, sense: LocaledStringDict, desc: LocaledStringDict, syn: String) {
                 self.phrase = phrase
                 self.lemma = lemma
                 self.adja = adja

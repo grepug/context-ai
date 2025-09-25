@@ -12,6 +12,7 @@ public struct SelectSenseCompletion: AITask {
         public let langs: String
         public let adja: String
         public let sense: String
+        public let isPhrase: Bool
 
         public init(text: String, word: String, langs: [CTLocale] = [.en, .zh_Hans], adja: String, sense: String) {
             self.text = text
@@ -19,6 +20,7 @@ public struct SelectSenseCompletion: AITask {
             self.langs = langs.map { $0.rawValue }.joined(separator: ",")
             self.adja = adja
             self.sense = sense
+            self.isPhrase = word.trimmingCharacters(in: .whitespacesAndNewlines).contains(" ")
         }
     }
 
@@ -28,6 +30,10 @@ public struct SelectSenseCompletion: AITask {
     }
 
     public var input: Input
+
+    public var path: String {
+        input.isPhrase ? "selectPhraseSense" : "selectSense"
+    }
 
     public init(input: Input) {
         self.input = input
